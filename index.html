@@ -2,10 +2,13 @@
 <html lang="es">
 
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Pulserinox | Pulseras de acero inoxidable</title>
+
 
     <style>
 
@@ -20,36 +23,36 @@
         body {
             margin: 0;
             font-family: Arial, Helvetica, sans-serif;
-            background: #0b0b0b;
+            background: #080808;
             color: white;
         }
+
 
         /* ================= HEADER ================= */
 
         header {
             background: #050505;
-            border-bottom: 1px solid #333;
-            padding: 20px;
+            border-bottom: 1px solid #292929;
+            padding: 18px 20px;
             position: sticky;
             top: 0;
             z-index: 1000;
         }
 
         .nav {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            gap: 20px;
         }
 
         .logo {
             color: white;
             text-decoration: none;
-            font-size: 24px;
+            font-size: 25px;
             font-weight: bold;
-            letter-spacing: 3px;
+            letter-spacing: 4px;
         }
 
         nav {
@@ -68,11 +71,11 @@
 
         nav a:hover,
         nav summary:hover {
-            color: #ccc;
+            color: #bdbdbd;
         }
 
 
-        /* ================= COLECCIÓN ================= */
+        /* ================= MENÚ COLECCIÓN ================= */
 
         nav details {
             position: relative;
@@ -82,20 +85,20 @@
             position: absolute;
             top: 32px;
             right: 0;
-            width: 250px;
-            background: #181818;
-            border: 1px solid #444;
+            width: 260px;
+            background: #151515;
+            border: 1px solid #3a3a3a;
             border-radius: 10px;
-            padding: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
+            padding: 12px;
+            box-shadow: 0 15px 40px rgba(0,0,0,0.65);
         }
 
         .menu-coleccion details {
-            margin-bottom: 10px;
+            margin-bottom: 5px;
         }
 
         .menu-coleccion summary {
-            padding: 10px;
+            padding: 12px;
             font-weight: bold;
             list-style: none;
         }
@@ -114,20 +117,20 @@
         }
 
         .submenu {
-            border-left: 1px solid #666;
-            margin-left: 15px;
-            padding-left: 12px;
+            border-left: 1px solid #555;
+            margin-left: 18px;
+            padding-left: 10px;
         }
 
         .submenu a {
             display: block;
-            padding: 8px;
-            color: #ccc;
+            padding: 9px;
+            color: #cfcfcf;
         }
 
         .submenu a:hover {
             color: white;
-            background: #252525;
+            background: #242424;
             border-radius: 5px;
         }
 
@@ -135,17 +138,20 @@
         /* ================= HERO ================= */
 
         .hero {
-            min-height: 650px;
+            min-height: 680px;
+
             display: flex;
             align-items: center;
             justify-content: center;
+
             text-align: center;
+
             padding: 80px 20px;
 
             background:
                 linear-gradient(
-                    rgba(0,0,0,0.55),
-                    rgba(0,0,0,0.85)
+                    rgba(0,0,0,0.45),
+                    rgba(0,0,0,0.88)
                 ),
                 url("Screenshot_2026-07-15-23-38-05-183_com.openai.chatgpt-edit.jpg");
 
@@ -154,33 +160,37 @@
         }
 
         .hero-content {
-            max-width: 800px;
+            max-width: 850px;
         }
 
         .hero h1 {
-            font-size: 58px;
+            font-size: 62px;
+            letter-spacing: 7px;
             margin: 0 0 20px;
-            letter-spacing: 5px;
         }
 
         .hero p {
-            font-size: 20px;
+            max-width: 650px;
+            margin: auto;
             color: #ddd;
-            line-height: 1.6;
+            font-size: 20px;
+            line-height: 1.7;
         }
 
         .boton-principal {
             display: inline-block;
-            margin-top: 25px;
+            margin-top: 30px;
             padding: 15px 35px;
             background: white;
             color: black;
+            border-radius: 7px;
             text-decoration: none;
-            border-radius: 8px;
             font-weight: bold;
+            transition: 0.2s;
         }
 
         .boton-principal:hover {
+            transform: translateY(-2px);
             background: #ddd;
         }
 
@@ -188,22 +198,22 @@
         /* ================= SECCIONES ================= */
 
         section {
-            max-width: 1100px;
+            max-width: 1150px;
             margin: auto;
-            padding: 80px 20px;
+            padding: 85px 20px;
         }
 
         .titulo-seccion {
             text-align: center;
-            font-size: 36px;
+            font-size: 38px;
             margin-bottom: 15px;
         }
 
         .texto-seccion {
-            text-align: center;
             max-width: 700px;
-            margin: 0 auto 45px;
-            color: #aaa;
+            margin: 0 auto 50px;
+            text-align: center;
+            color: #999;
             line-height: 1.7;
         }
 
@@ -211,38 +221,50 @@
         /* ================= ELIGE TU ESTILO ================= */
 
         .estilos-grid {
+            max-width: 950px;
+            margin: auto;
+
             display: grid;
             grid-template-columns: repeat(2, 1fr);
             gap: 30px;
-            max-width: 900px;
-            margin: auto;
         }
 
         .estilo-card {
-            background: #151515;
+            display: block;
+
+            background:
+                linear-gradient(
+                    rgba(20,20,20,0.92),
+                    rgba(10,10,10,0.97)
+                );
+
             border: 1px solid #333;
             border-radius: 15px;
-            padding: 40px 30px;
-            text-align: center;
-            text-decoration: none;
+
+            padding: 45px 30px;
+
             color: white;
+            text-decoration: none;
+
+            text-align: center;
+
             transition: 0.3s;
         }
 
         .estilo-card:hover {
-            transform: translateY(-8px);
+            transform: translateY(-7px);
             border-color: #777;
-            background: #1b1b1b;
+            background: #171717;
         }
 
         .estilo-icono {
-            font-size: 50px;
-            margin-bottom: 20px;
+            font-size: 48px;
+            margin-bottom: 18px;
         }
 
         .estilo-card h3 {
-            font-size: 25px;
-            margin: 10px 0;
+            font-size: 26px;
+            margin: 10px 0 15px;
         }
 
         .estilo-card p {
@@ -252,15 +274,14 @@
 
         .estilo-card span {
             display: block;
-            margin: 20px 0;
+            margin: 22px 0;
             color: #ddd;
             font-size: 14px;
         }
 
         .estilo-card strong {
-            display: inline-block;
-            margin-top: 10px;
             font-size: 14px;
+            letter-spacing: 1px;
         }
 
 
@@ -268,60 +289,74 @@
 
         .productos {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+            grid-template-columns:
+                repeat(auto-fit, minmax(240px, 1fr));
+
             gap: 25px;
         }
 
         .producto {
-            background: #151515;
+            background: #121212;
             border: 1px solid #292929;
-            border-radius: 12px;
+            border-radius: 13px;
             overflow: hidden;
-            transition: transform 0.2s, border-color 0.2s;
+
+            transition:
+                transform 0.25s,
+                border-color 0.25s;
         }
 
         .producto:hover {
-            transform: translateY(-5px);
+            transform: translateY(-6px);
             border-color: #555;
         }
 
         .producto img {
             width: 100%;
-            height: 250px;
+            height: 280px;
+
             object-fit: cover;
             display: block;
         }
 
         .producto-contenido {
-            padding: 20px;
+            padding: 22px;
         }
 
         .producto h3 {
-            margin-top: 0;
-            font-size: 21px;
+            margin: 0 0 10px;
+            font-size: 22px;
         }
 
         .producto p {
-            color: #aaa;
-            line-height: 1.5;
+            color: #999;
+            line-height: 1.6;
+            min-height: 50px;
         }
 
         .precio {
-            font-size: 20px;
+            font-size: 21px;
             font-weight: bold;
-            margin: 15px 0;
+            margin: 18px 0;
         }
 
         .boton-producto {
-            display: inline-block;
+            display: block;
             width: 100%;
-            text-align: center;
-            padding: 12px;
+
+            padding: 13px;
+
             background: white;
             color: black;
+
+            text-align: center;
             text-decoration: none;
+
             border-radius: 7px;
+
             font-weight: bold;
+
+            transition: 0.2s;
         }
 
         .boton-producto:hover {
@@ -332,6 +367,7 @@
         /* ================= SOBRE NOSOTROS ================= */
 
         .sobre {
+            max-width: none;
             background: #111;
             border-top: 1px solid #222;
             border-bottom: 1px solid #222;
@@ -344,7 +380,7 @@
         }
 
         .sobre p {
-            color: #bbb;
+            color: #aaa;
             line-height: 1.8;
         }
 
@@ -357,11 +393,12 @@
         }
 
         .faq details {
-            background: #151515;
+            background: #121212;
             border: 1px solid #292929;
-            border-radius: 8px;
+            border-radius: 9px;
+
             margin-bottom: 12px;
-            padding: 18px;
+            padding: 19px;
         }
 
         .faq summary {
@@ -370,9 +407,9 @@
         }
 
         .faq p {
-            color: #aaa;
-            line-height: 1.6;
-            margin-bottom: 0;
+            color: #999;
+            line-height: 1.7;
+            margin: 15px 0 0;
         }
 
 
@@ -383,9 +420,9 @@
         }
 
         .contacto p {
-            color: #bbb;
+            color: #aaa;
             font-size: 17px;
-            margin: 10px 0;
+            line-height: 1.7;
         }
 
         .contacto a {
@@ -399,18 +436,17 @@
             background: #050505;
             border-top: 1px solid #292929;
             text-align: center;
-            padding: 40px 20px;
+            padding: 45px 20px;
         }
 
         footer p {
-            color: #888;
+            color: #777;
             margin: 8px;
         }
 
         .gracias {
             color: white;
             font-size: 18px;
-            margin-bottom: 20px;
         }
 
 
@@ -420,20 +456,22 @@
 
             .nav {
                 flex-direction: column;
+                gap: 18px;
             }
 
             nav {
                 flex-wrap: wrap;
                 justify-content: center;
-                gap: 15px;
+                gap: 14px;
             }
 
             .hero {
-                min-height: 550px;
+                min-height: 570px;
             }
 
             .hero h1 {
-                font-size: 38px;
+                font-size: 39px;
+                letter-spacing: 4px;
             }
 
             .hero p {
@@ -447,9 +485,11 @@
             .menu-coleccion {
                 right: -80px;
             }
+
         }
 
     </style>
+
 </head>
 
 
@@ -462,11 +502,17 @@
 
     <div class="nav">
 
-        <a href="index.html" class="logo">
+
+        <a
+            href="index.html"
+            class="logo"
+        >
             PULSERINOX
         </a>
 
+
         <nav>
+
 
             <a href="index.html">
                 Inicio
@@ -481,10 +527,11 @@
                     Colección
                 </summary>
 
+
                 <div class="menu-coleccion">
 
 
-                    <!-- COLECCIÓN MODERNA -->
+                    <!-- MODERNA -->
 
                     <details>
 
@@ -492,30 +539,36 @@
                             Colección moderna
                         </summary>
 
+
                         <div class="submenu">
 
-                            <a href="clasica.html">
+
+                            <a href="Clásica.html">
                                 Clásica
                             </a>
+
 
                             <a href="premium.html">
                                 Premium
                             </a>
 
+
                             <a href="urban.html">
                                 Urban
                             </a>
 
+
                             <a href="elite.html">
                                 Elite
                             </a>
+
 
                         </div>
 
                     </details>
 
 
-                    <!-- COLECCIÓN ANTIGUA -->
+                    <!-- ANTIGUA -->
 
                     <details>
 
@@ -523,23 +576,29 @@
                             Colección antigua
                         </summary>
 
+
                         <div class="submenu">
+
 
                             <a href="romano.html">
                                 Romano
                             </a>
 
+
                             <a href="vikingo.html">
                                 Vikingo
                             </a>
+
 
                             <a href="faraon.html">
                                 Faraón
                             </a>
 
+
                         </div>
 
                     </details>
+
 
                 </div>
 
@@ -555,6 +614,7 @@
                 Contacto
             </a>
 
+
         </nav>
 
     </div>
@@ -562,15 +622,18 @@
 </header>
 
 
-<!-- ================= PORTADA ================= -->
+
+<!-- ================= HERO ================= -->
 
 <section class="hero">
 
     <div class="hero-content">
 
+
         <h1>
             PULSERINOX
         </h1>
+
 
         <p>
             Pulseras de acero inoxidable diseñadas
@@ -578,22 +641,30 @@
             estilo y personalidad.
         </p>
 
-        <a href="#estilos" class="boton-principal">
+
+        <a
+            href="#estilos"
+            class="boton-principal"
+        >
             ELEGIR MI ESTILO
         </a>
+
 
     </div>
 
 </section>
 
 
+
 <!-- ================= ELIGE TU ESTILO ================= -->
 
 <section id="estilos">
 
+
     <h2 class="titulo-seccion">
         Elige tu estilo
     </h2>
+
 
     <p class="texto-seccion">
         Encuentra la colección que mejor representa
@@ -606,24 +677,31 @@
 
         <!-- MODERNA -->
 
-        <a href="#productos" class="estilo-card">
+        <a
+            href="#productos"
+            class="estilo-card"
+        >
 
             <div class="estilo-icono">
                 ⚙️
             </div>
 
+
             <h3>
                 Colección Moderna
             </h3>
+
 
             <p>
                 Diseños actuales, elegantes
                 y minimalistas.
             </p>
 
+
             <span>
                 Clásica · Premium · Urban · Elite
             </span>
+
 
             <strong>
                 VER COLECCIÓN →
@@ -632,26 +710,34 @@
         </a>
 
 
+
         <!-- ANTIGUA -->
 
-        <a href="#coleccion-antigua" class="estilo-card">
+        <a
+            href="#coleccion-antigua"
+            class="estilo-card"
+        >
 
             <div class="estilo-icono">
                 ⚔️
             </div>
 
+
             <h3>
                 Colección Antigua
             </h3>
+
 
             <p>
                 Inspirada en guerreros,
                 imperios y antiguas civilizaciones.
             </p>
 
+
             <span>
                 Romano · Vikingo · Faraón
             </span>
+
 
             <strong>
                 VER COLECCIÓN →
@@ -659,18 +745,22 @@
 
         </a>
 
+
     </div>
 
 </section>
 
 
-<!-- ================= PRODUCTOS MODERNOS ================= -->
+
+<!-- ================= COLECCIÓN MODERNA ================= -->
 
 <section id="productos">
+
 
     <h2 class="titulo-seccion">
         Colección Moderna
     </h2>
+
 
     <p class="texto-seccion">
         Diseños modernos de Pulserinox,
@@ -682,164 +772,199 @@
     <div class="productos">
 
 
-        <!-- CLÁSICA -->
+        <!-- ================= CLÁSICA ================= -->
 
         <div class="producto">
 
+
             <img
-                src="Screenshot_2026-07-15-23-38-05-183_com.openai.chatgpt-edit.jpg"
+                src="file_00000000f9f072438adfe48363f1c6cf.png"
                 alt="Pulsera Clásica"
             >
 
+
             <div class="producto-contenido">
+
 
                 <h3>
                     Clásica
                 </h3>
+
 
                 <p>
                     Diseño limpio, elegante
                     y atemporal.
                 </p>
 
+
                 <div class="precio">
-                    19,99 €
+                    25,99 €
                 </div>
 
+
                 <a
-                    href="clasica.html"
+                    href="Clásica.html"
                     class="boton-producto"
                 >
-                    VER PRODUCTO
+                    VER MÁS
                 </a>
+
 
             </div>
 
         </div>
 
 
-        <!-- PREMIUM -->
+
+        <!-- ================= PREMIUM ================= -->
 
         <div class="producto">
+
 
             <img
                 src="premium.jpg"
                 alt="Pulsera Premium"
             >
 
+
             <div class="producto-contenido">
+
 
                 <h3>
                     Premium
                 </h3>
 
+
                 <p>
-                    Un acabado más elaborado
-                    para quienes buscan algo especial.
+                    Un acabado elaborado para
+                    quienes buscan algo especial.
                 </p>
+
 
                 <div class="precio">
                     24,99 €
                 </div>
 
+
                 <a
                     href="premium.html"
                     class="boton-producto"
                 >
-                    VER PRODUCTO
+                    VER MÁS
                 </a>
+
 
             </div>
 
         </div>
 
 
-        <!-- URBAN -->
+
+        <!-- ================= URBAN ================= -->
 
         <div class="producto">
+
 
             <img
                 src="urban.jpg"
                 alt="Pulsera Urban"
             >
 
+
             <div class="producto-contenido">
+
 
                 <h3>
                     Urban
                 </h3>
 
+
                 <p>
-                    Diseño moderno con
-                    carácter industrial.
+                    Diseño moderno con carácter
+                    industrial.
                 </p>
+
 
                 <div class="precio">
                     24,99 €
                 </div>
 
+
                 <a
                     href="urban.html"
                     class="boton-producto"
                 >
-                    VER PRODUCTO
+                    VER MÁS
                 </a>
+
 
             </div>
 
         </div>
 
 
-        <!-- ELITE -->
+
+        <!-- ================= ELITE ================= -->
 
         <div class="producto">
+
 
             <img
                 src="elite.jpg"
                 alt="Pulsera Elite"
             >
 
+
             <div class="producto-contenido">
+
 
                 <h3>
                     Elite
                 </h3>
 
+
                 <p>
-                    Diseño exclusivo y
-                    acabado premium.
+                    Diseño exclusivo y acabado
+                    premium.
                 </p>
+
 
                 <div class="precio">
                     29,99 €
                 </div>
 
+
                 <a
                     href="elite.html"
                     class="boton-producto"
                 >
-                    VER PRODUCTO
+                    VER MÁS
                 </a>
+
 
             </div>
 
         </div>
+
 
     </div>
 
 </section>
 
 
+
 <!-- ================= COLECCIÓN ANTIGUA ================= -->
 
 <section id="coleccion-antigua">
+
 
     <h2 class="titulo-seccion">
         Colección Antigua
     </h2>
 
+
     <p class="texto-seccion">
-        Diseños inspirados en las grandes
+        Diseños inspirados en grandes
         civilizaciones y culturas de la historia.
     </p>
 
@@ -851,137 +976,121 @@
 
         <div class="producto">
 
+
             <img
                 src="romano.jpg"
                 alt="Pulsera Romano"
             >
 
+
             <div class="producto-contenido">
+
 
                 <h3>
                     Romano
                 </h3>
+
 
                 <p>
                     Inspirada en la estética
                     de la antigua Roma.
                 </p>
 
+
                 <div class="precio">
                     Próximamente
                 </div>
+
 
                 <a
                     href="romano.html"
                     class="boton-producto"
                 >
-                    VER PRODUCTO
+                    VER MÁS
                 </a>
+
 
             </div>
 
         </div>
+
 
 
         <!-- VIKINGO -->
 
         <div class="producto">
 
+
             <img
                 src="vikingo.jpg"
                 alt="Pulsera Vikingo"
             >
 
+
             <div class="producto-contenido">
+
 
                 <h3>
                     Vikingo
                 </h3>
+
 
                 <p>
                     Inspirada en la fuerza
                     y espíritu nórdico.
                 </p>
 
+
                 <div class="precio">
                     Próximamente
                 </div>
+
 
                 <a
                     href="vikingo.html"
                     class="boton-producto"
                 >
-                    VER PRODUCTO
+                    VER MÁS
                 </a>
+
 
             </div>
 
         </div>
+
 
 
         <!-- FARAÓN -->
 
         <div class="producto">
 
+
             <img
                 src="faraon.jpg"
                 alt="Pulsera Faraón"
             >
 
+
             <div class="producto-contenido">
+
 
                 <h3>
                     Faraón
                 </h3>
+
 
                 <p>
                     Inspirada en el antiguo
                     Egipto.
                 </p>
 
+
                 <div class="precio">
                     Próximamente
                 </div>
 
+
                 <a
                     href="faraon.html"
                     class="boton-producto"
-                >
-                    VER PRODUCTO
-                </a>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!-- ================= SOBRE PULSERINOX ================= -->
-
-<section class="sobre">
-
-    <div class="sobre-contenido">
-
-        <h2 class="titulo-seccion">
-            Sobre Pulserinox
-        </h2>
-
-        <p>
-            En Pulserinox creamos pulseras de acero
-            inoxidable combinando diseño,
-            resistencia y personalidad.
-        </p>
-
-        <p>
-            Cada colección está pensada para ofrecer
-            diferentes estilos, desde diseños modernos
-            y minimalistas hasta modelos inspirados
-            en culturas y épocas históricas.
-        </p>
-
-    </div>
-
-</sect
+             
