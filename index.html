@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <title>Pulserinox | Pulseras de acero inoxidable</title>
 
     <style>
+
         * {
             box-sizing: border-box;
         }
@@ -22,7 +24,7 @@
             color: white;
         }
 
-        /* ---------- HEADER ---------- */
+        /* ================= HEADER ================= */
 
         header {
             background: #050505;
@@ -69,30 +71,27 @@
             color: #ccc;
         }
 
-        details {
+
+        /* ================= COLECCIÓN ================= */
+
+        nav details {
             position: relative;
         }
-
-        /* ---------- MENU COLECCIÓN ---------- */
 
         .menu-coleccion {
             position: absolute;
             top: 32px;
             right: 0;
-            width: 240px;
+            width: 250px;
             background: #181818;
             border: 1px solid #444;
             border-radius: 10px;
             padding: 15px;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.6);
         }
 
         .menu-coleccion details {
             margin-bottom: 10px;
-        }
-
-        .menu-coleccion details:last-child {
-            margin-bottom: 0;
         }
 
         .menu-coleccion summary {
@@ -107,7 +106,7 @@
 
         .menu-coleccion summary::before {
             content: "▶ ";
-            font-size: 10px;
+            font-size: 9px;
         }
 
         .menu-coleccion details[open] > summary::before {
@@ -117,7 +116,7 @@
         .submenu {
             border-left: 1px solid #666;
             margin-left: 15px;
-            padding-left: 15px;
+            padding-left: 12px;
         }
 
         .submenu a {
@@ -132,7 +131,8 @@
             border-radius: 5px;
         }
 
-        /* ---------- HERO ---------- */
+
+        /* ================= HERO ================= */
 
         .hero {
             min-height: 650px;
@@ -141,9 +141,14 @@
             justify-content: center;
             text-align: center;
             padding: 80px 20px;
+
             background:
-                linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.85)),
+                linear-gradient(
+                    rgba(0,0,0,0.55),
+                    rgba(0,0,0,0.85)
+                ),
                 url("Screenshot_2026-07-15-23-38-05-183_com.openai.chatgpt-edit.jpg");
+
             background-size: cover;
             background-position: center;
         }
@@ -179,7 +184,8 @@
             background: #ddd;
         }
 
-        /* ---------- SECCIONES ---------- */
+
+        /* ================= SECCIONES ================= */
 
         section {
             max-width: 1100px;
@@ -201,7 +207,64 @@
             line-height: 1.7;
         }
 
-        /* ---------- PRODUCTOS ---------- */
+
+        /* ================= ELIGE TU ESTILO ================= */
+
+        .estilos-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .estilo-card {
+            background: #151515;
+            border: 1px solid #333;
+            border-radius: 15px;
+            padding: 40px 30px;
+            text-align: center;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s;
+        }
+
+        .estilo-card:hover {
+            transform: translateY(-8px);
+            border-color: #777;
+            background: #1b1b1b;
+        }
+
+        .estilo-icono {
+            font-size: 50px;
+            margin-bottom: 20px;
+        }
+
+        .estilo-card h3 {
+            font-size: 25px;
+            margin: 10px 0;
+        }
+
+        .estilo-card p {
+            color: #aaa;
+            line-height: 1.6;
+        }
+
+        .estilo-card span {
+            display: block;
+            margin: 20px 0;
+            color: #ddd;
+            font-size: 14px;
+        }
+
+        .estilo-card strong {
+            display: inline-block;
+            margin-top: 10px;
+            font-size: 14px;
+        }
+
+
+        /* ================= PRODUCTOS ================= */
 
         .productos {
             display: grid;
@@ -265,7 +328,8 @@
             background: #ddd;
         }
 
-        /* ---------- SOBRE NOSOTROS ---------- */
+
+        /* ================= SOBRE NOSOTROS ================= */
 
         .sobre {
             background: #111;
@@ -284,7 +348,8 @@
             line-height: 1.8;
         }
 
-        /* ---------- FAQ ---------- */
+
+        /* ================= FAQ ================= */
 
         .faq {
             max-width: 800px;
@@ -310,7 +375,8 @@
             margin-bottom: 0;
         }
 
-        /* ---------- CONTACTO ---------- */
+
+        /* ================= CONTACTO ================= */
 
         .contacto {
             text-align: center;
@@ -326,7 +392,8 @@
             color: white;
         }
 
-        /* ---------- FOOTER ---------- */
+
+        /* ================= FOOTER ================= */
 
         footer {
             background: #050505;
@@ -346,7 +413,8 @@
             margin-bottom: 20px;
         }
 
-        /* ---------- MÓVIL ---------- */
+
+        /* ================= MÓVIL ================= */
 
         @media (max-width: 700px) {
 
@@ -357,6 +425,7 @@
             nav {
                 flex-wrap: wrap;
                 justify-content: center;
+                gap: 15px;
             }
 
             .hero {
@@ -371,18 +440,26 @@
                 font-size: 17px;
             }
 
+            .estilos-grid {
+                grid-template-columns: 1fr;
+            }
+
             .menu-coleccion {
                 right: -80px;
             }
         }
+
     </style>
 </head>
 
+
 <body>
+
 
 <!-- ================= HEADER ================= -->
 
 <header>
+
     <div class="nav">
 
         <a href="index.html" class="logo">
@@ -395,6 +472,7 @@
                 Inicio
             </a>
 
+
             <!-- COLECCIÓN -->
 
             <details>
@@ -405,7 +483,8 @@
 
                 <div class="menu-coleccion">
 
-                    <!-- MODERNA -->
+
+                    <!-- COLECCIÓN MODERNA -->
 
                     <details>
 
@@ -415,7 +494,7 @@
 
                         <div class="submenu">
 
-                            <a href="Clásica.html">
+                            <a href="clasica.html">
                                 Clásica
                             </a>
 
@@ -435,7 +514,8 @@
 
                     </details>
 
-                    <!-- ANTIGUA -->
+
+                    <!-- COLECCIÓN ANTIGUA -->
 
                     <details>
 
@@ -465,9 +545,11 @@
 
             </details>
 
+
             <a href="#faq">
                 Preguntas frecuentes
             </a>
+
 
             <a href="#contacto">
                 Contacto
@@ -476,10 +558,11 @@
         </nav>
 
     </div>
+
 </header>
 
 
-<!-- ================= HERO ================= -->
+<!-- ================= PORTADA ================= -->
 
 <section class="hero">
 
@@ -491,12 +574,12 @@
 
         <p>
             Pulseras de acero inoxidable diseñadas
-            para quienes buscan resistencia, estilo
-            y personalidad.
+            para quienes buscan resistencia,
+            estilo y personalidad.
         </p>
 
-        <a href="#productos" class="boton-principal">
-            VER COLECCIÓN
+        <a href="#estilos" class="boton-principal">
+            ELEGIR MI ESTILO
         </a>
 
     </div>
@@ -504,18 +587,97 @@
 </section>
 
 
-<!-- ================= PRODUCTOS ================= -->
+<!-- ================= ELIGE TU ESTILO ================= -->
+
+<section id="estilos">
+
+    <h2 class="titulo-seccion">
+        Elige tu estilo
+    </h2>
+
+    <p class="texto-seccion">
+        Encuentra la colección que mejor representa
+        tu personalidad.
+    </p>
+
+
+    <div class="estilos-grid">
+
+
+        <!-- MODERNA -->
+
+        <a href="#productos" class="estilo-card">
+
+            <div class="estilo-icono">
+                ⚙️
+            </div>
+
+            <h3>
+                Colección Moderna
+            </h3>
+
+            <p>
+                Diseños actuales, elegantes
+                y minimalistas.
+            </p>
+
+            <span>
+                Clásica · Premium · Urban · Elite
+            </span>
+
+            <strong>
+                VER COLECCIÓN →
+            </strong>
+
+        </a>
+
+
+        <!-- ANTIGUA -->
+
+        <a href="#coleccion-antigua" class="estilo-card">
+
+            <div class="estilo-icono">
+                ⚔️
+            </div>
+
+            <h3>
+                Colección Antigua
+            </h3>
+
+            <p>
+                Inspirada en guerreros,
+                imperios y antiguas civilizaciones.
+            </p>
+
+            <span>
+                Romano · Vikingo · Faraón
+            </span>
+
+            <strong>
+                VER COLECCIÓN →
+            </strong>
+
+        </a>
+
+    </div>
+
+</section>
+
+
+<!-- ================= PRODUCTOS MODERNOS ================= -->
 
 <section id="productos">
 
     <h2 class="titulo-seccion">
-        Nuestra colección
+        Colección Moderna
     </h2>
 
     <p class="texto-seccion">
-        Descubre nuestros modelos y encuentra la
-        pulsera que mejor representa tu estilo.
+        Diseños modernos de Pulserinox,
+        creados para combinar resistencia
+        y estilo.
     </p>
+
 
     <div class="productos">
 
@@ -525,9 +687,10 @@
         <div class="producto">
 
             <img
-    src="file_00000000f9f072438adfe48363f1c6cf.png"
-    alt="Pulsera Clásica"
->
+                src="Screenshot_2026-07-15-23-38-05-183_com.openai.chatgpt-edit.jpg"
+                alt="Pulsera Clásica"
+            >
+
             <div class="producto-contenido">
 
                 <h3>
@@ -535,18 +698,19 @@
                 </h3>
 
                 <p>
-                    Diseño limpio, elegante y atemporal.
+                    Diseño limpio, elegante
+                    y atemporal.
                 </p>
 
                 <div class="precio">
-                    25,99 €
+                    19,99 €
                 </div>
 
                 <a
-                    <a href="Clásica.html" 
-                    class="boton-producto">
-    VER PRODUCTO
-
+                    href="clasica.html"
+                    class="boton-producto"
+                >
+                    VER PRODUCTO
                 </a>
 
             </div>
@@ -570,8 +734,8 @@
                 </h3>
 
                 <p>
-                    Un acabado más elaborado para
-                    quienes buscan algo especial.
+                    Un acabado más elaborado
+                    para quienes buscan algo especial.
                 </p>
 
                 <div class="precio">
@@ -606,8 +770,8 @@
                 </h3>
 
                 <p>
-                    Un diseño moderno con carácter
-                    industrial.
+                    Diseño moderno con
+                    carácter industrial.
                 </p>
 
                 <div class="precio">
@@ -642,7 +806,8 @@
                 </h3>
 
                 <p>
-                    Diseño exclusivo y acabado premium.
+                    Diseño exclusivo y
+                    acabado premium.
                 </p>
 
                 <div class="precio">
@@ -651,6 +816,135 @@
 
                 <a
                     href="elite.html"
+                    class="boton-producto"
+                >
+                    VER PRODUCTO
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= COLECCIÓN ANTIGUA ================= -->
+
+<section id="coleccion-antigua">
+
+    <h2 class="titulo-seccion">
+        Colección Antigua
+    </h2>
+
+    <p class="texto-seccion">
+        Diseños inspirados en las grandes
+        civilizaciones y culturas de la historia.
+    </p>
+
+
+    <div class="productos">
+
+
+        <!-- ROMANO -->
+
+        <div class="producto">
+
+            <img
+                src="romano.jpg"
+                alt="Pulsera Romano"
+            >
+
+            <div class="producto-contenido">
+
+                <h3>
+                    Romano
+                </h3>
+
+                <p>
+                    Inspirada en la estética
+                    de la antigua Roma.
+                </p>
+
+                <div class="precio">
+                    Próximamente
+                </div>
+
+                <a
+                    href="romano.html"
+                    class="boton-producto"
+                >
+                    VER PRODUCTO
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- VIKINGO -->
+
+        <div class="producto">
+
+            <img
+                src="vikingo.jpg"
+                alt="Pulsera Vikingo"
+            >
+
+            <div class="producto-contenido">
+
+                <h3>
+                    Vikingo
+                </h3>
+
+                <p>
+                    Inspirada en la fuerza
+                    y espíritu nórdico.
+                </p>
+
+                <div class="precio">
+                    Próximamente
+                </div>
+
+                <a
+                    href="vikingo.html"
+                    class="boton-producto"
+                >
+                    VER PRODUCTO
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <!-- FARAÓN -->
+
+        <div class="producto">
+
+            <img
+                src="faraon.jpg"
+                alt="Pulsera Faraón"
+            >
+
+            <div class="producto-contenido">
+
+                <h3>
+                    Faraón
+                </h3>
+
+                <p>
+                    Inspirada en el antiguo
+                    Egipto.
+                </p>
+
+                <div class="precio">
+                    Próximamente
+                </div>
+
+                <a
+                    href="faraon.html"
                     class="boton-producto"
                 >
                     VER PRODUCTO
@@ -677,8 +971,8 @@
 
         <p>
             En Pulserinox creamos pulseras de acero
-            inoxidable combinando diseño, resistencia
-            y personalidad.
+            inoxidable combinando diseño,
+            resistencia y personalidad.
         </p>
 
         <p>
@@ -690,134 +984,4 @@
 
     </div>
 
-</section>
-
-
-<!-- ================= FAQ ================= -->
-
-<section id="faq">
-
-    <h2 class="titulo-seccion">
-        Preguntas frecuentes
-    </h2>
-
-    <p class="texto-seccion">
-        Aquí encontrarás respuestas a algunas de las
-        preguntas más habituales.
-    </p>
-
-    <div class="faq">
-
-
-        <details>
-
-            <summary>
-                ¿De qué material están hechas las pulseras?
-            </summary>
-
-            <p>
-                Nuestras pulseras están fabricadas
-                en acero inoxidable.
-            </p>
-
-        </details>
-
-
-        <details>
-
-            <summary>
-                ¿Son resistentes al agua?
-            </summary>
-
-            <p>
-                El acero inoxidable es resistente al agua
-                y está pensado para el uso diario.
-            </p>
-
-        </details>
-
-
-        <details>
-
-            <summary>
-                ¿Cómo puedo comprar una pulsera?
-            </summary>
-
-            <p>
-                Selecciona el modelo que quieras y pulsa
-                el botón de compra para acceder al pago
-                seguro.
-            </p>
-
-        </details>
-
-
-        <details>
-
-            <summary>
-                ¿Puedo contactar con vosotros?
-            </summary>
-
-            <p>
-                Sí. Puedes utilizar los datos de contacto
-                que aparecen al final de la página.
-            </p>
-
-        </details>
-
-
-    </div>
-
-</section>
-
-
-<!-- ================= CONTACTO ================= -->
-
-<section id="contacto">
-
-    <div class="contacto">
-
-        <h2 class="titulo-seccion">
-            Contacto
-        </h2>
-
-        <p>
-            ¿Tienes alguna pregunta? Estamos aquí para ayudarte.
-        </p>
-
-        <p>
-            📧
-            <a href="mailto:rafaelmunozluque03@gmail.com">
-                rafaelmunozluque03@gmail.com
-            </a>
-        </p>
-
-        <p>
-            📱
-            <a href="tel:+34619456488">
-                619 456 488
-            </a>
-        </p>
-
-    </div>
-
-</section>
-
-
-<!-- ================= FOOTER ================= -->
-
-<footer>
-
-    <p class="gracias">
-        Gracias por tu compra y por confiar en Pulserinox.
-    </p>
-
-    <p>
-        © 2026 Pulserinox. Todos los derechos reservados.
-    </p>
-
-</footer>
-
-
-</body>
-    </html>
+</sect
